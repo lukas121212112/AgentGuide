@@ -1,5 +1,4 @@
 # AgentGuide
-![ScreenShot_2025-11-03_185515_441.png](https://youke1.picui.cn/s1/2025/11/03/690889f9b5d71.png)
 
 <div align="center">
     <img src="https://img.shields.io/badge/Agent-开发指南-blue?style=for-the-badge" alt="Agent开发指南">
@@ -8,11 +7,11 @@
     
 <br/>
     
-<a href="https://github.com/adongwanai/AgentGuide">
-        <img src="https://img.shields.io/github/stars/adongwanai/AgentGuide?style=social" alt="stars">
+<a href="https://github.com/zhangzhendong/AgentGuide">
+        <img src="https://img.shields.io/github/stars/zhangzhendong/AgentGuide?style=social" alt="stars">
     </a>
-    <a href="https://github.com/adongwanai/AgentGuide/network/members">
-        <img src="https://img.shields.io/github/forks/adongwanai/AgentGuide?style=social" alt="forks">
+    <a href="https://github.com/zhangzhendong/AgentGuide/network/members">
+        <img src="https://img.shields.io/github/forks/zhangzhendong/AgentGuide?style=social" alt="forks">
     </a>
     
 <br/>
@@ -20,7 +19,7 @@
 <h2>🔥 AI Agent 开发 × 面试求职 = 一站式解决方案</h2>
     
 <p>
-        <strong>一站式 AI Agent 学习指南</strong><br/>
+        <strong>对标 JavaGuide 的 AI Agent 学习指南</strong><br/>
         <strong>从入门到拿 Offer，系统化 + 实战化 + 求职导向</strong>
     </p>
     
@@ -53,8 +52,8 @@
 | 维度          | 数据/事实                                         |
 | :---------- | :-------------------------------------------- |
 | 📈 **市场需求** | 2025年春招，Agent 相关岗位同比增长 **300%+**（数据来源：Boss直聘） |
-| 💰 **薪资水平** | Agent 算法工程师平均年薪 **40-100万**，高于传统 NLP/CV 岗位    |
-| 🚀 **技术门槛** | **个人可玩转**：一台笔记本 + API 即可开发(算法需要GPU资源)         |
+| 💰 **薪资水平** | Agent 算法工程师平均年薪 **40-80万**，高于传统 NLP/CV 岗位     |
+| 🚀 **技术门槛** | **个人可玩转**：不需要 GPU 集群，一台笔记本 + API 即可开发         |
 | 🎯 **岗位类型** | **算法岗 + 开发岗双通道**，既可以做创新研究，也可以做工程落地            |
 | 🔥 **应用场景** | 智能客服、代码生成、数据分析、研究助手、自动化运维...无处不在              |
 
@@ -63,10 +62,10 @@
 - 🧩 **资料过于零散**：LangChain 文档、YouTube 教程、知乎文章...碎片化学习效率低
 - ❓ **没有求职导向**：学完了技术，但不知道面试怎么考、简历怎么写
 
-**`AgentGuide` 的定位：**
+**`AgentGuide` 的使命：**
 
-> **AI Agent 领域的 "JavaGuide"**  
-> 系统化、工程化、求职导向的 Agent 学习与面试指南  
+> **成为 AI Agent 领域的 "JavaGuide"**  
+> 一份系统化、工程化、求职导向的 Agent 学习与面试指南  
 > 让每一个想转 Agent 方向的同学，都能找到清晰的成长路径
 
 ### 🎯 这份指南适合谁？
@@ -74,66 +73,70 @@
 - ✅ **算法工程师**：想要将论文里的 Agent 思想落地成可用系统
 - ✅ **后端/全栈工程师**：想要转型 AI 赛道，掌握 Agent 开发技能
 - ✅ **在校学生**：准备春招/秋招，希望系统准备 AI Agent 相关岗位
-- ✅ **AI 爱好者**：想要深入理解 LangChain、LangChain、高级RAG 等核心技术
-- ✅ **"通吃"型选手**：既想做算法创新，又想做工程落地的全栈 AI 同学
-
+- ✅ **AI 爱好者**：想要深入理解 LangChain、LlamaIndex、RAG 等核心技术
+- ✅ **"通吃"型选手**：既想做算法创新，又想做工程落地的全栈 AI 人才
 
 ### 🌟 AgentGuide 的 6 大核心价值
 
 <table>
 <tr>
 <td width="50%">
-📚 系统化学习路径
 
-- ✅ 从零基础到面试通过的完整路线
-- ✅ 理论 → 工具 → 实战 → 求职，环环相扣
-- ✅ 不用再到处找资料，一个仓库学完全部
+📚 系统化学习路径
+✅ 从零基础到面试通过的完整路线
+✅ 理论 → 工具 → 实战 → 求职，环环相扣
+✅ 不用再到处找资料，一个仓库学完全部
+
 </td>
 <td width="50%">
- 🎯 100% 求职导向
- 
+
+🎯 100% 求职导向
 - ✅ 每个知识点都标注"面试怎么考"
 - ✅ 提供真实大厂面试题
 - ✅ 手把手教你如何将项目写进简历
+
 </td>
 </tr>
 <tr>
 <td>
-💼 n个简历级实战项目
 
-- ✅ XXXAgent（RAG方向）
-- ✅ XXXMulti-Agent（协作方向）
-- ✅ XXXAgent（高级方向）
+#### 💼 **3 个简历级实战项目**
+- ✅ 论文检索 Agent（RAG方向）
+- ✅ 旅行规划 Multi-Agent（协作方向）
+- ✅ Web Agent（高级方向）
 - ✅ 每个项目提供算法岗和开发岗两种写法
+
 </td>
 <td>
-🔀 算法 × 开发双线通吃
 
+#### 🔀 **算法 × 开发双线通吃**
 - ✅ 同一项目，可投算法岗或开发岗
 - ✅ 算法线：原理、创新、实验设计
 - ✅ 开发线：架构、优化、系统设计
+
 </td>
 </tr>
 <tr>
 <td>
-🆓 完全开源，持续更新
 
+#### 🆓 **完全开源，持续更新**
 - ✅ 所有内容永久免费
 - ✅ 作者一线大模型算法工程师
 - ✅ 社区驱动，欢迎贡献
+
 </td>
 <td>
-🚀 快速上手，立即见效
 
+#### 🚀 **快速上手，立即见效**
 - ✅ 10 分钟跑通第一个 Agent
 - ✅ 2-3 周完成简历级项目
 - ✅ 6-8 周系统掌握，准备面试
+
 </td>
 </tr>
 </table>
 
 ---
-
 
 ### 🎁 学完 AgentGuide，你能获得什么？
 
@@ -141,12 +144,13 @@
 
 ```
 ✅ 【概念清晰】深刻理解：Agent 和普通 LLM 调用的本质区别
-✅ 【技能掌握】熟练使用：LangChain、Langchain、向量数据库等核心工具  
+✅ 【技能掌握】熟练使用：LangChain、LlamaIndex、向量数据库等核心工具  
 ✅ 【动手能力】独立开发：RAG Agent、Multi-Agent、Web Agent 系统
 ✅ 【简历亮点】2-3 个可以写进简历、面试能讲清楚的项目
 ✅ 【面试自信】掌握 Agent 方向的高频面试题和标准答案
 ✅ 【职业规划】明确算法岗和开发岗的差异，找到适合自己的方向
 ✅ 【人脉资源】加入 AI Agent 学习社群，结识同行，互相成长
+
 ```
 
 ---
@@ -348,8 +352,7 @@ graph TD
 - [ ] [AI Agent 学习路线图（本文档）](./README.md)
 - [ ] [简历编写指南：如何突出 Agent 项目](./docs/04-interview/04-resume-guide.md)
 - [ ] [算法岗 vs 开发岗：如何讲好你的项目故事](./docs/04-interview/05-storytelling.md)
-- [x] [⭐ 转行大模型热门方向准备指南](./docs/04-interview/06-career-transition.md)
-- [x] [⭐ 如何准备大模型秋招完整攻略](./docs/04-interview/07-job-hunting-guide.md)
+- [ ] [转行大模型热门方向准备指南](./docs/04-interview/06-career-transition.md)
 
 #### 4.3 优质资源汇总
 - [ ] [必读论文清单](./resources/papers.md)
@@ -374,7 +377,7 @@ graph TD
 阅读：docs/02-tech-stack/04-langchain-guide.md
 
 # 第四步：跑通第一个 Agent
-git clone https://github.com/adongwanai/AgentGuide.git
+git clone https://github.com/zhangzhendong/AgentGuide.git
 cd AgentGuide/examples
 python quickstart_agent.py
 ```
@@ -392,7 +395,7 @@ python quickstart_agent.py
 阅读：docs/02-tech-stack/08-vector-db-basics.md
 
 # 第四步：搭建第一个 RAG Agent
-git clone https://github.com/adongwanai/AgentGuide.git
+git clone https://github.com/zhangzhendong/AgentGuide.git
 cd AgentGuide/examples
 python quickstart_rag_agent.py
 ```
@@ -426,11 +429,12 @@ python quickstart_rag_agent.py
 
 ### 👨‍💻 关于作者
 
-我是**阿东**，一线大模型算法工程师
+我是**张振东**，一线大厂大模型算法工程师
 
-- 🎓 **技术背景**：专注 AI、RAG、LLM 应用方向
+- 🎓 **技术背景**：专注 AI Agent、RAG、LLM 应用方向
 - 📝 **内容创作**：全网 15000+ 粉丝，持续分享 AI 技术与求职经验
 - 🚀 **开源贡献**：多个 AI 相关开源项目维护者
+- 💼 **求职辅导**：帮助 50+ 同学成功拿到大模型 Offer
 
 ### 🌐 在这些平台找到我
 
@@ -438,22 +442,22 @@ python quickstart_rag_agent.py
 <tr>
 <td align="center" width="25%">
 <strong>📱 小红书</strong><br/>
-<a href="https://www.xiaohongshu.com/user/profile/5f310fd50000000001009df5"><code>阿东玩AI</code></a><br/>
+<code>阿东的大模型实验室</code><br/>
 <sub>短视频教程 + 技术拆解</sub>
 </td>
 <td align="center" width="25%">
 <strong>📝 公众号</strong><br/>
-<a href="https://mp.weixin.qq.com/s/u_UFh0l8clzaPLyp2_LEnQ"><code>阿东玩AI</code></a><br/>
+<code>阿东玩AI</code><br/>
 <sub>深度技术文章 + 求职经验</sub>
 </td>
 <td align="center" width="25%">
 <strong>🎬 B站</strong><br/>
-<a href="https://space.bilibili.com/297247087"><code>阿东玩AI</code></a><br/>
+<code>阿东的AI实验室</code><br/>
 <sub>视频教程 + 项目实战</sub>
 </td>
 <td align="center" width="25%">
 <strong>💻 GitHub</strong><br/>
-<a href="https://github.com/adongwanai"><code>@adongwanai</code></a><br/>
+<code>@adongwanai</code><br/>
 <sub>开源项目 + 代码示例</sub>
 </td>
 </tr>
@@ -471,11 +475,9 @@ python quickstart_rag_agent.py
 
 **如何加入？**
 
-1. **方式一**：Star 本项目后，在 [Issues](https://github.com/adongwanai/AgentGuide/issues) 中评论"申请加群"
+1. **方式一**：Star 本项目后，在 [Issues](https://github.com/zhangzhendong/AgentGuide/issues) 中评论"申请加群"，留下你的微信号
 2. **方式二**：关注公众号「阿东玩AI」，回复「AgentGuide」获取入群二维码
-3. **方式三**：[小红书@阿东玩AI](https://www.xiaohongshu.com/user/profile/5f310fd50000000001009df5)，私信"加群"
-
-**🎁 社群福利**：Agent 学习路线图 PDF + 面试题库 + 项目代码模板 + 大厂内推机会
+3. **方式三**：小红书搜索「阿东的大模型实验室」，私信"加群"
 
 ---
 
@@ -489,6 +491,12 @@ python quickstart_rag_agent.py
 - 💬 **反馈** 你的建议和意见（提 Issue 或 PR）
 
 **你的每一个 Star 都是我持续更新的动力！🚀**
+
+---
+
+## 📄 开源协议
+
+本项目采用 [MIT License](./LICENSE) 开源协议。
 
 ---
 
