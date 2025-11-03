@@ -865,12 +865,21 @@ AgentGuide 提供 **3 个简历级实战项目**，每个项目都提供：
 - [x] [⭐ 转行大模型热门方向准备指南](./docs/04-interview/06-career-transition.md)
 - [x] [⭐ 如何准备大模型秋招完整攻略](./docs/04-interview/07-job-hunting-guide.md)
 
-#### 4.3 优质资源汇总
-- [x] [⭐ AI Agent 开发框架推荐](./resources/frameworks.md)
-- [x] [⭐ AI Agent 开发者工具箱](./resources/tools.md)
-- [ ] [必读论文清单](./resources/papers.md)
-- [ ] [优质博客与教程](./resources/blogs.md)
-- [ ] [开源项目推荐](./resources/projects.md)
+#### 4.3 核心资源精选（只推荐最重要的）
+
+**Agent 方向核心资源**：
+- [x] [⭐ AI Agent 开发框架推荐](./resources/frameworks.md) - 7个核心框架对比
+- [x] [⭐ Awesome Agent 资源精选](./resources/awesome-agent.md) - Agent 开发必备
+- [x] [⭐ Awesome RAG 资源精选](./resources/awesome-rag.md) - RAG 技术栈
+- [x] [⭐ AI Agent 开发者工具箱](./resources/tools.md) - 效率工具推荐
+
+**更多资源查询**：
+- [ ] [必读论文清单](./resources/papers.md) - 20-30篇核心论文
+- [ ] [优质博客与教程](./resources/blogs.md) - 学习资源推荐
+
+**🌟 需要更全面的 LLM 资源？**  
+👉 查看作者的另一个项目：**[Awesome-Awesome-LLM](https://github.com/adongwanai/Awesome-Awesome-LLM)**  
+（涵盖训练、推理、多模态、Infra 等 LLM 全栈 200+ Awesome 系列资源）
 
 ---
 
