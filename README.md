@@ -83,57 +83,51 @@
 <table>
 <tr>
 <td width="50%">
-
 📚 系统化学习路径
+
 - ✅ 从零基础到面试通过的完整路线
 - ✅ 理论 → 工具 → 实战 → 求职，环环相扣
 - ✅ 不用再到处找资料，一个仓库学完全部
-
 </td>
 <td width="50%">
-
  🎯 100% 求职导向
+ 
 - ✅ 每个知识点都标注"面试怎么考"
 - ✅ 提供真实大厂面试题
 - ✅ 手把手教你如何将项目写进简历
-
 </td>
 </tr>
 <tr>
 <td>
-
 💼 n个简历级实战项目
+
 - ✅ XXXAgent（RAG方向）
 - ✅ XXXMulti-Agent（协作方向）
 - ✅ XXXAgent（高级方向）
 - ✅ 每个项目提供算法岗和开发岗两种写法
-
 </td>
 <td>
-
 🔀 算法 × 开发双线通吃
+
 - ✅ 同一项目，可投算法岗或开发岗
 - ✅ 算法线：原理、创新、实验设计
 - ✅ 开发线：架构、优化、系统设计
-
 </td>
 </tr>
 <tr>
 <td>
-
 🆓 完全开源，持续更新
+
 - ✅ 所有内容永久免费
 - ✅ 作者一线大模型算法工程师
 - ✅ 社区驱动，欢迎贡献
-
 </td>
 <td>
-
 🚀 快速上手，立即见效
+
 - ✅ 10 分钟跑通第一个 Agent
 - ✅ 2-3 周完成简历级项目
 - ✅ 6-8 周系统掌握，准备面试
-
 </td>
 </tr>
 </table>
@@ -431,7 +425,7 @@ python quickstart_rag_agent.py
 
 ### 👨‍💻 关于作者
 
-我是**阿东**，一线大厂大模型算法工程师
+我是**阿东**，一线大模型算法工程师
 
 - 🎓 **技术背景**：专注 AI、RAG、LLM 应用方向
 - 📝 **内容创作**：全网 15000+ 粉丝，持续分享 AI 技术与求职经验
@@ -443,22 +437,22 @@ python quickstart_rag_agent.py
 <tr>
 <td align="center" width="25%">
 <strong>📱 小红书</strong><br/>
-<code>阿东玩AI</code><br/>
+<a href="https://www.xiaohongshu.com/user/profile/5f310fd50000000001009df5"><code>阿东玩AI</code></a><br/>
 <sub>短视频教程 + 技术拆解</sub>
 </td>
 <td align="center" width="25%">
 <strong>📝 公众号</strong><br/>
-<code>阿东玩AI</code><br/>
+<a href="https://mp.weixin.qq.com/s/u_UFh0l8clzaPLyp2_LEnQ"><code>阿东玩AI</code></a><br/>
 <sub>深度技术文章 + 求职经验</sub>
 </td>
 <td align="center" width="25%">
 <strong>🎬 B站</strong><br/>
-<code>阿东玩AI</code><br/>
+<a href="https://space.bilibili.com/297247087"><code>阿东玩AI</code></a><br/>
 <sub>视频教程 + 项目实战</sub>
 </td>
 <td align="center" width="25%">
 <strong>💻 GitHub</strong><br/>
-<code>@adongwanai</code><br/>
+<a href="https://github.com/adongwanai"><code>@adongwanai</code></a><br/>
 <sub>开源项目 + 代码示例</sub>
 </td>
 </tr>
@@ -478,7 +472,7 @@ python quickstart_rag_agent.py
 
 1. **方式一**：Star 本项目后，在 [Issues](https://github.com/adongwanai/AgentGuide/issues) 中评论"申请加群"
 2. **方式二**：关注公众号「阿东玩AI」，回复「AgentGuide」获取入群二维码
-3. **方式三**：小红书搜索「阿东玩AI」，私信"加群"
+3. **方式三**：[小红书@阿东玩AI](https://www.xiaohongshu.com/user/profile/5f310fd50000000001009df5)，私信"加群"
 
 **🎁 社群福利**：Agent 学习路线图 PDF + 面试题库 + 项目代码模板 + 大厂内推机会
 
