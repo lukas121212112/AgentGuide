@@ -67,9 +67,9 @@
 - **面试求职**：算法岗 vs 开发岗、面试题库、简历优化、大厂面经
 - **实战项目**：论文检索Agent、旅行规划Multi-Agent、Web Agent
 
-### 🗺️ AgentGuide 在 LLM 开源生态中的定位
+### 🗺️ AgentGuide 在 LLM 生态中的定位
 
-**我们覆盖 AI Agent 开发的完整技术栈** - 从训练到应用：
+**我们覆盖 AI Agent 开发的完整技术栈** - 从模型微调到应用部署的全流程：
 
 <div align="center">
 <img src="https://youke1.picui.cn/s1/2025/11/04/6909c2db15898.png" alt="LLM开源生态图谱" width="100%">
@@ -95,16 +95,19 @@
 </td>
 <td width="33%">
 
-**🔧 AI Infra 层**（算法岗必备）
-- ✅ **模型训练**
-  - PyTorch、DeepSpeed
-  - LlaMA-Factory
-- ✅ **微调（Fine-tuning）**
-  - LoRA、QLoRA、SFT
+**🔧 Training 层**（算法岗必备）
+- ✅ **模型微调（Fine-tuning）**
+  - SFT（监督微调）
+  - LoRA、QLoRA、Adapter
   - Function Call 微调
+  - LlaMA-Factory 实战
 - ✅ **强化学习（RLHF）**
   - PPO、DPO、GRPO
   - Reward Model 训练
+  - Agent RL 策略优化
+- ✅ **训练框架**
+  - PyTorch、DeepSpeed
+  - 分布式训练优化
 
 </td>
 <td width="33%">
@@ -124,10 +127,19 @@
 </tr>
 </table>
 
-> **💡 核心定位**：  
-> **算法岗**：学习微调、强化学习、算法优化（覆盖 Agent + Infra 层）  
-> **开发岗**：学习框架使用、系统搭建、工程实践（覆盖 Agent + Data 层）  
-> **通吃型**：完整技术栈，算法和开发都能投（覆盖全部）
+> **💡 AgentGuide 的完整覆盖**：  
+> 
+> **🔬 算法工程师路径**：  
+> - Agent 架构算法（ReAct、Reflexion、ToT）+ RAG算法优化（GraphRAG、Agentic RAG、GraphRAG）  
+> - 模型微调（SFT、LoRA）+ 强化学习（PPO、DPO、GRPO）  
+> - 实验设计 + 论文撰写 + 算法优化  
+> 
+> **🛠️ 开发工程师路径**：  
+> - Agent 框架实战（LangChain、LangGraph、AutoGen）+ RAG 系统搭建  
+> - 向量数据库+ 文档解析  
+> - 系统设计 + 性能优化 + 生产部署  
+> 
+> **🔀 通吃型路径**：完整技术栈，算法创新 + 工程落地双修
 
 ---
 
