@@ -2,13 +2,21 @@
 
 1. **综合教程与课程（理论+实践）**
     
-    1. **[动手学大模型应用开发](https://datawhalechina.github.io/llm-universe/#/)**: Datawhale的开源教程，覆盖大模型基础、开发与应用，适合初学者系统学习。
+    1. **[《动手学大模型应用开发》](https://datawhalechina.github.io/llm-universe/#/)**: Datawhale的开源教程，覆盖大模型基础、开发与应用，适合初学者系统学习。
         
-    2. **[Large Language Models (LLMs) with Colab notebooks](https://mlabonne.github.io/blog/)**: 提供Colab笔记本，边学边练，适合动手实践。
+    2. **[《面向开发者的 LLM 入门教程》](https://github.com/datawhalechina/llm-cookbook)**: 吴恩达大模型系列课程中文版，Datawhale翻译整理，适合开发者入门。
         
-    3. **[AI-Guide-and-Demos](https://github.com/Hoper-J/AI-Guide-and-Demos-zh_CN)**: 中文AI指南与代码示例，适合中文用户快速上手。
+    3. **[《开源大模型食用指南》](https://github.com/datawhalechina/self-llm)**: 针对中国宝宝量身打造的基于Linux环境快速微调（全参数/Lora）、部署国内外开源大模型（LLM）/多模态大模型（MLLM）教程。
         
-    4. **[LLM-Action](https://github.com/liguodongiot/llm-action)**: 聚焦大模型实战项目，适合进阶开发者。
+    4. **[《动手学大模型Dive into LLMs》](https://github.com/Lordog/dive-into-llms)**: 系列编程实践教程（含PPT、实验手册和视频），由上海交通大学《人工智能安全技术》课程拓展而来，主题包括数学推理、GUI Agent、大模型对齐等。
+        
+    5. **[《从零开始的大语言模型原理与实践教程》](https://github.com/datawhalechina/happy-llm)**: Datawhale出品，从原理到实践的系统教程。
+        
+    6. **[《AI-Guide-and-Demos》](https://github.com/Hoper-J/AI-Guide-and-Demos-zh_CN)**: 一份入门AI/LLM大模型的逐步指南，包含教程和演示代码，带你从API走进本地大模型部署和微调，代码文件提供Kaggle或Colab在线版本。
+        
+    7. **[Large Language Models (LLMs) with Colab notebooks](https://mlabonne.github.io/blog/)**: 提供Colab笔记本，边学边练，适合动手实践。
+        
+    8. **[LLM-Action](https://github.com/liguodongiot/llm-action)**: 聚焦大模型实战项目，适合进阶开发者。
         
 2. **视频资源（B站/YTB）**
     
@@ -34,7 +42,21 @@
         
     2. **[LLM Visualization](https://bbycroft.net/llm)**：大模型结构可视化，助力理解Transformer等核心概念。
         
-5. **进阶与实战工具**
+    3. **[100+ LLM/RL 算法原理图](https://github.com/changyeyu/LLM-RL-Visualized)** ⭐ 强烈推荐！：《大模型算法：强化学习、微调与对齐》作者余昌叶的100+张原创算法原理图，涵盖Transformer架构、注意力机制、SFT微调、LoRA/QLoRA、DPO/PPO/GRPO、RLHF全流程、逻辑推理优化等。通过可视化图解深入理解算法的数学推导和实现细节，算法岗必看！配套书籍：[《大模型算法：强化学习、微调与对齐》](https://book.douban.com/subject/37331056/)
+        
+    4. **[Interactive Transformer Explainer](https://poloclub.github.io/transformer-explainer/)**：交互式可视化工具，帮助理解Transformer内部工作机制。
+        
+5. **大模型微调入门与实战**
+    
+    1. **[大模型微调系列教程（Datawhale）](https://mp.weixin.qq.com/s/aQCY8873d09zFIhMhrx7Pg)**: 从基础到实战的微调教程，适合初学者入门。
+        
+    2. **[大模型微调实战进阶](https://mp.weixin.qq.com/s/N8LdX3eRuaIJ-yxkpxZJ5w)**: 进阶微调技术详解。
+        
+    3. **[大模型微调最佳实践](https://mp.weixin.qq.com/s/AbyWaTaPOp9sr5mz5SOVwg)**: 生产环境微调经验分享。
+        
+    4. **[大模型微调技巧与优化](https://mp.weixin.qq.com/s/6sNGvqLktPk6AP7kPs9JyA)**: 微调技巧与性能优化方法。
+        
+6. **进阶与实战工具**
     
     1. **[How Much VRAM](https://github.com/AlexBodner/How_Much_VRAM)**：帮助评估大模型训练的显存需求，适合硬件选型。
         
@@ -42,7 +64,7 @@
         
     3. **[W&B articles](https://wandb.ai/fully-connected)**：Weights & Biases的文章，分享模型训练与调优技巧。
         
-6. **理论书籍与资源**
+7. **理论书籍与资源**
     
     1. **[Theoretical Machine Learning: A Handbook for Everyone](https://www.tengjiaye.com/mlbook.html)**：机器学习理论手册，适合打牢基础。
         
@@ -51,9 +73,20 @@
 
 ### 学习建议
 
-- **零基础入门**：从[动手学大模型应用开发]和B站视频（如五里墩茶社、漆妮妮）开始，结合Colab笔记本实践。
+- **零基础入门**：
+  - 推荐路径1：[《面向开发者的 LLM 入门教程》](https://github.com/datawhalechina/llm-cookbook) → [《动手学大模型应用开发》](https://datawhalechina.github.io/llm-universe/#/)
+  - 推荐路径2：[《AI-Guide-and-Demos》](https://github.com/Hoper-J/AI-Guide-and-Demos-zh_CN) 从API到本地部署的完整指南
+  - 视频辅助：B站视频（如五里墩茶社、漆妮妮）结合Colab笔记本实践
     
-- **进阶开发**：深入[Huggingface Blog]、[Lil’Log]，并尝试[LLM-Action]和[Implementation of all RAG techniques]的实战项目。
+- **系统学习**：
+  - 理论+实践：[《动手学大模型Dive into LLMs》](https://github.com/Lordog/dive-into-llms) - 上海交大课程（含PPT、视频、实验）
+  - 原理深入：[《从零开始的大语言模型原理与实践》](https://github.com/datawhalechina/happy-llm) - Datawhale系统教程
+    
+- **微调与部署**：
+  - 快速上手：[《开源大模型食用指南》](https://github.com/datawhalechina/self-llm) - Linux环境微调部署
+  - 微调实战：[大模型微调系列教程](https://mp.weixin.qq.com/s/aQCY8873d09zFIhMhrx7Pg) - 从入门到实战
+    
+- **进阶开发**：深入[Huggingface Blog]、[Lil'Log]，并尝试[LLM-Action]和[Implementation of all RAG techniques]的实战项目。
     
 - **优化Prompt**：参考[Prompt Engineering Guide]，提升模型交互效果。
     

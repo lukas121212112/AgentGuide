@@ -39,7 +39,7 @@
 - [🎯 面试题库](#-第六步面试准备与-offer-冲刺) - 200+题、系统设计、编程题
 
 **🛠️ 快速导航**：
-- [🚀 10分钟快速开始](#-快速开始) | [💬 加入学习社群](#-联系作者--加入社群) | [❓ 常见问题](./FAQ.md) | [📋 更新日志](./CHANGELOG.md)
+- [🚀 10分钟快速开始](#-快速开始) | [💬 加入学习社群](#-联系作者--加入社群) | [❓ 常见问题](./FAQ.md)
 
 ---
 
@@ -1076,6 +1076,12 @@ AgentGuide 提供 **n 个简历级实战项目**，每个项目都提供：
 - [x] [开发者工具箱](./resources/tools.md) - Cursor、元宝、Excalidraw
 - [x] [开发框架总览](./resources/frameworks.md) - 快速框架对比
 
+**🎨 推荐可视化学习资源**：
+- 📊 **[100+ LLM/RL 算法原理图](https://github.com/changyeyu/LLM-RL-Visualized)** - 《大模型算法：强化学习、微调与对齐》作者巨献
+  - 涵盖内容：Transformer架构、注意力机制、SFT微调、LoRA/QLoRA、DPO/PPO/GRPO、RLHF全流程、逻辑推理优化等
+  - 适合人群：算法岗必看！通过100+原创原理图深入理解大模型算法的数学原理和实现细节
+  - 配套书籍：[《大模型算法：强化学习、微调与对齐》](https://book.douban.com/subject/37331056/)
+
 **🌟 需要更全面的 LLM 资源？**  
 👉 查看作者的另一个项目：**[Awesome-Awesome-LLM](https://github.com/adongwanai/Awesome-Awesome-LLM)**  
 （涵盖训练、推理、多模态、Infra 等 LLM 全栈 200+ Awesome 系列资源）
@@ -1218,7 +1224,6 @@ python quickstart_rag_agent.py
 ## 📝 更多文档
 
 ### 📚 项目文档
-- 📋 [更新日志 (CHANGELOG)](./CHANGELOG.md) - 项目进度与历史更新
 - ❓ [常见问题 (FAQ)](./FAQ.md) - 14个常见问题解答
 - 📊 [项目总结 (PROJECT_SUMMARY)](./PROJECT_SUMMARY.md) - 项目定位与核心优势
 - 🤝 [贡献指南 (CONTRIBUTING)](./CONTRIBUTING.md) - 如何参与贡献

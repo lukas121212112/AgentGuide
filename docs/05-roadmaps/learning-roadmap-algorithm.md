@@ -77,6 +77,9 @@
 - **课程**: [Stanford CS224N: NLP with Deep Learning](https://web.stanford.edu/class/cs224n/) - NLP经典课程
 - **书籍**: [《大语言模型》](https://llmbook-zh.github.io/) - 大模型最佳中文书籍
 - **书籍**: [《Build a Large Language Model (From Scratch)》](https://github.com/rasbt/LLMs-from-scratch) - 从零构建大模型
+- **教程**: [《动手学大模型Dive into LLMs》](https://github.com/Lordog/dive-into-llms) - 上海交大编程实践教程（含PPT、视频）
+- **教程**: [《面向开发者的 LLM 入门教程》](https://github.com/datawhalechina/llm-cookbook) - 吴恩达课程中文版
+- **教程**: [《从零开始的大语言模型原理与实践》](https://github.com/datawhalechina/happy-llm) - Datawhale系统教程
 
 ### 📝 必读论文
 - **基础**: ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) - Transformer开山之作
@@ -86,6 +89,7 @@
 
 ### 🛠️ 研究工具与框架
 - **训练框架**: [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory), [TRL](https://github.com/huggingface/trl), [OpenRLHF](https://github.com/OpenLLMAI/OpenRLHF)
+- **微调教程**: [大模型微调系列](https://mp.weixin.qq.com/s/aQCY8873d09zFIhMhrx7Pg) - 从基础到实战的完整指南
 - **评估工具**: [lm-evaluation-harness](https://github.com/EleutherAI/lm-evaluation-harness), [OpenCompass](https://github.com/open-compass/opencompass), [RAGAs](https://github.com/explodinggradients/ragas)
 - **Agent框架**: [LangChain](https://github.com/langchain-ai/langchain), [AutoGen](https://github.com/microsoft/autogen), [AgentScope](https://github.com/modelscope/agentscope)
 
@@ -94,6 +98,13 @@
 - **博客**: [Lil'Log (OpenAI)](https://lilianweng.github.io/), [科学空间（苏剑林）](https://kexue.fm/), [Andrej Karpathy](http://karpathy.github.io/)
 - **综述**: [大语言模型综述](https://github.com/RUCAIBox/LLMSurvey), [Awesome LLM Reasoning](https://github.com/atfortes/Awesome-LLM-Reasoning)
 - **资源库**: [Awesome LLM Resources](https://github.com/WangRongsheng/awesome-LLM-resources)
+
+### 🎨 可视化学习资源（强烈推荐！）
+- **[100+ LLM/RL 算法原理图](https://github.com/changyeyu/LLM-RL-Visualized)** ⭐ 算法岗必看！
+  - 作者：《大模型算法：强化学习、微调与对齐》作者余昌叶
+  - 内容：100+张原创算法原理图，涵盖Transformer、注意力机制、SFT、LoRA/QLoRA、DPO/PPO/GRPO、RLHF、推理优化等
+  - 价值：通过可视化图解深入理解算法的数学推导和实现细节，让复杂算法一目了然
+  - 书籍：[《大模型算法：强化学习、微调与对齐》](https://book.douban.com/subject/37331056/)
 
 ---
 
@@ -131,8 +142,8 @@
 | ------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | 1      | Python & PyTorch 基础     | 课程: [《动手学深度学习》](https://zh.d2l.ai/) ([B站视频](https://www.bilibili.com/video/BV1fsmyYnEfw/?spm_id_from=333.337.search-card.all.click))<br>数学: [3Blue1Brown - 线性代数的精髓](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)<br>补充: [台湾大学李宏毅深度学习](https://www.bilibili.com/video/BV1J94y1f7u5/) | 掌握 Python 基础语法、PyTorch 张量操作与训练循环           |
 | 2      | 手撕神经网络训练                | 教程: [Neural Networks from Scratch](https://www.youtube.com/playlist?list=PLQVvvvaa5QuCjyjbA3C8C2UEgC6w2OsiA)<br>课程: [Andrej Karpathy: Neural Networks Zero to Hero](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)                                                                               | 从零实现一个简单的前馈神经网络，理解反向传播                     |
-| 3      | Transformer 宏观理解        | 博客: [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)<br>论文: ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762)<br>可视化: [Interactive Transformer](https://poloclub.github.io/transformer-explainer/)                                                                           | 掌握 Encoder/Decoder 结构、Multi-Head Attention |
-| 4      | Transformer 矩阵计算        | 教程: [Transformer from scratch in Excel](https://www.youtube.com/watch?v=k_P-tprA6-Q)<br>详解: [Transformer 数学原理](https://kexue.fm/)                                                                                                                                                                                           | 逐个公式推导 Q/K/V 计算流程                          |
+| 3      | Transformer 宏观理解        | 博客: [The Illustrated Transformer](http://jalammar.github.io/illustrated-transformer/)<br>论文: ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762)<br>可视化: [Interactive Transformer](https://poloclub.github.io/transformer-explainer/)<br>图解: [Transformer算法原理图](https://github.com/changyeyu/LLM-RL-Visualized)                                                                           | 掌握 Encoder/Decoder 结构、Multi-Head Attention |
+| 4      | Transformer 矩阵计算        | 教程: [Transformer from scratch in Excel](https://www.youtube.com/watch?v=k_P-tprA6-Q)<br>详解: [Transformer 数学原理](https://kexue.fm/)<br>图解: [算法原理图](https://github.com/changyeyu/LLM-RL-Visualized)                                                                                                                                                                                           | 逐个公式推导 Q/K/V 计算流程                          |
 | 5      | 手撕 Multi-Head Attention | 教程: [Let's build GPT: from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY)<br>代码: [nanoGPT](https://github.com/karpathy/nanoGPT), [build nanoGPT](https://github.com/karpathy/build-nanogpt)                                                                                                                          | 纯 PyTorch 实现 Multi-Head Attention 和 FFN    |
 | 6      | 手撕 Transformer 关键模块     | 参考: [pytorch-llama](https://github.com/hkproj/pytorch-llama), [LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)                                                                                                                                                                                               | 组合已实现模块，完成一个完整的 Transformer Block          |
 | 7      | MOE 架构与模型家族             | 论文: [Outrageously Large Neural Networks](https://arxiv.org/abs/1701.06538)<br>指南: [A Visual Guide to Mixture of Experts](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts)                                                                                                                 | 理解 MOE 架构，并梳理 Bert、T5、GPT 架构的差异            |
@@ -174,7 +185,7 @@
 | 8      | Agent 核心概念              | 博客: [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>综述: [大语言模型综述](https://github.com/RUCAIBox/LLMSurvey)<br>课程: [清华NLP大模型公开课](https://www.bilibili.com/video/BV1UG411p7zv/) | 建立 Agent 的宏观认知，理解其与 LLM 的区别                          |
 | 9-10   | ReAct 论文精读与复现       | 论文: [ReAct](https://arxiv.org/abs/2210.03629)<br>代码: [LangChain ReAct Agent](https://python.langchain.com/v0.1/docs/modules/agents/agent_types/react/)<br>解读: [ReAct解读](https://www.promptingguide.ai/research/react) | 深度理解 "Thought, Action, Observation" 循环，并用框架实现 |
 | 11-12  | ReAct 算法复现与思考           | 博客: [深入理解 ReAct](https://www.promptingguide.ai/techniques/react)<br>框架: [Lagent](https://github.com/InternLM/lagent), [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent) | 总结 ReAct 的优缺点，思考其在复杂任务中的局限性 |
-| 13-14  | 预留时间 & 周度复盘 | 书籍: [《大语言模型》](https://llmbook-zh.github.io/)<br>技术报告: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A) | 巩固本周知识，完成所有编码任务 |
+| 13-14  | 预留时间 & 周度复盘 | 书籍: [《大语言模型》](https://llmbook-zh.github.io/)<br>技术报告: [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A)<br>教程: [《动手学大模型Dive into LLMs》](https://github.com/Lordog/dive-into-llms) | 巩固本周知识，完成所有编码任务 |
 
 ---
 
@@ -370,7 +381,7 @@
 | **天数** | **学习主题**              | **资源链接**                                                                                                                                                                                                                                           | **目标**                               |
 | ------ | --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------ |
 | 36     | RL 基础入门               | 教程: [Hugging Face Deep RL Course](https://huggingface.co/learn/deep-rl-course/unit0/introduction)<br>课程: [《动手学强化学习》](https://hrl.boyuai.com/)<br>书籍: [Reinforcement Learning: An Introduction](http://incompleteideas.net/book/the-book-2nd.html)  | 掌握 MDP, Policy, Value Function 等核心概念 |
-| 37     | Policy Gradient & PPO | 博客: [Understanding PPO](https://spinningup.openai.com/en/latest/algorithms/ppo.html)<br>论文: [PPO](https://arxiv.org/abs/1707.06347)<br>教程: [RL课程](https://ernestryu.com/courses/RL-LLM.html)                                                       | 理解 PPO 的目标函数和裁剪机制                    |
+| 37     | Policy Gradient & PPO | 博客: [Understanding PPO](https://spinningup.openai.com/en/latest/algorithms/ppo.html)<br>论文: [PPO](https://arxiv.org/abs/1707.06347)<br>教程: [RL课程](https://ernestryu.com/courses/RL-LLM.html)<br>图解: [PPO算法图解](https://github.com/changyeyu/LLM-RL-Visualized) | 理解 PPO 的目标函数和裁剪机制                    |
 | 38     | DPO 论文精读与推导           | 论文: [DPO](https://arxiv.org/abs/2305.18290)<br>博客: [DPO 详解](https://huggingface.co/blog/dpo-trl)<br>教程: [Preference Optimization](https://huggingface.co/blog/dpo_vlm)                                                                             | 掌握 DPO 如何从偏好数据中隐式学习奖励并优化策略，并推导其损失函数  |
 | 39     | DPO 实战                | 教程: [Hugging Face TRL DPO](https://huggingface.co/docs/trl/main/en/dpo_trainer)<br>框架: [OpenRLHF](https://github.com/OpenLLMAI/OpenRLHF), [RL-Factory](https://github.com/Simple-Efficient/RL-Factory), [VeRL](https://github.com/volcengine/verl) | 使用 `TRL` 库完成一次 DPO 训练                |
 | 40     | GRPO 理论解读             | 论文: [GRPO](https://arxiv.org/pdf/2402.03300)<br>相关: [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)<br>综合: [Open o1推理](https://github.com/WangRongsheng/awesome-LLM-resources#%E6%8E%A8%E7%90%86-open-o1)                                | 理解 GRPO 如何将 DPO 扩展到组级别的偏好            |

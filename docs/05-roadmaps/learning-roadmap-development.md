@@ -73,7 +73,10 @@
 - **课程**: [吴恩达: Generative AI for Everyone](https://www.deeplearning.ai/courses/generative-ai-for-everyone/)
 - **课程**: [微软: Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
 - **课程**: [HuggingFace NLP Course](https://huggingface.co/learn/nlp-course/chapter1/1)
-- **书籍**: [《动手学大模型应用开发》](https://datawhalechina.github.io/llm-universe/#/)
+- **教程**: [《动手学大模型应用开发》](https://datawhalechina.github.io/llm-universe/#/) - Datawhale开源教程
+- **教程**: [《面向开发者的 LLM 入门教程》](https://github.com/datawhalechina/llm-cookbook) - 吴恩达课程中文版
+- **教程**: [《开源大模型食用指南》](https://github.com/datawhalechina/self-llm) - 快速微调与部署教程
+- **教程**: [《AI-Guide-and-Demos》](https://github.com/Hoper-J/AI-Guide-and-Demos-zh_CN) - API到本地部署微调指南
 - **书籍**: [《Build a Large Language Model (From Scratch)》](https://github.com/rasbt/LLMs-from-scratch)
 
 ### 🛠️ 开发框架与工具
@@ -87,6 +90,8 @@
 - **社区**: [HuggingFace](https://huggingface.co/), [ModelScope](https://modelscope.cn/), [魔乐社区](https://modelers.cn/)
 - **博客**: [Lil'Log (OpenAI)](https://lilianweng.github.io/), [科学空间（苏剑林）](https://kexue.fm/), [Chip Huyen](https://huyenchip.com/blog/)
 - **资源库**: [Awesome LLM Resources](https://github.com/WangRongsheng/awesome-LLM-resources)
+- **可视化**: [100+ LLM/RL 算法原理图](https://github.com/changyeyu/LLM-RL-Visualized) - 通过图解理解算法原理
+- **可视化**: [Interactive Transformer Explainer](https://poloclub.github.io/transformer-explainer/) - 交互式理解Transformer
 
 ---
 
@@ -118,7 +123,7 @@
 | 2      | LangChain 核心概念     | 文档: [LangChain Quickstart](https://python.langchain.com/v0.1/docs/get_started/quickstart/)<br>课程: [吴恩达: LangChain for LLM Application Development](https://learn.deeplearning.ai/langchain/lesson/1/introduction)<br>课程: [Building Systems with the ChatGPT API](https://learn.deeplearning.ai/chatgpt-building-system/lesson/1/introduction) | 理解 LangChain 六大核心模块，熟练使用 LCEL            |
 | 3      | RAG Part 1: 加载与分割  | 文档: [LlamaIndex Loaders](https://docs.llamaindex.ai/en/stable/module_guides/loading/documents_and_nodes/root.html)<br>工具: [Unstructured.io](https://unstructured-io.github.io/unstructured/), [MinerU](https://github.com/opendatalab/MinerU), [Docling](https://github.com/DS4SD/docling)                                                    | 掌握不同格式文档 (PDF, MD) 的加载和文本分块策略            |
 | 4      | RAG Part 2: 向量化与存储 | 教程: [FAISS Intro](https://github.com/facebookresearch/faiss/wiki/Getting-started)<br>教程: [Sentence Transformers](https://www.sbert.net/)                                                                                                                                                                                                      | 理解 Embedding 原理，使用 FAISS/Chroma 构建本地向量索引 |
-| 5-6    | 手撕 Naive RAG 系统    | 教程: [RAG from Scratch](https://github.com/langchain-ai/rag-from-scratch)<br>概念: [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>教程: [动手学大模型应用开发](https://datawhalechina.github.io/llm-universe/#/)                                                                                                   | 整合 FastAPI + LangChain，完成一个端到端的文档问答 API  |
+| 5-6    | 手撕 Naive RAG 系统    | 教程: [RAG from Scratch](https://github.com/langchain-ai/rag-from-scratch)<br>概念: [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>教程: [动手学大模型应用开发](https://datawhalechina.github.io/llm-universe/#/)<br>参考: [面向开发者的LLM入门教程](https://github.com/datawhalechina/llm-cookbook)                                                                                                   | 整合 FastAPI + LangChain，完成一个端到端的文档问答 API  |
 | 7      | 周度总结与项目部署          |                                                                                                                                                                                                                                                                                                                                               | 将本周的 RAG 项目用 Docker 打包，并成功运行             |
 
 ---
