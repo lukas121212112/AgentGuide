@@ -1058,9 +1058,9 @@ AgentGuide 提供 **n 个简历级实战项目**，每个项目都提供：
 - [x] [Agent 资源总览 📂](./resources/agent/) - Agent 所有资源导航
   - [Agent 框架对比](./resources/agent/frameworks.md) - 5个核心框架
   - [Memory 模块](./resources/agent/memory.md) - 4个记忆系统
-  - [Tool Use](./resources/agent/tools.md) - 工具调用
+  - [Tool Use](./resources/tools.md) - 工具调用
   - [GUI Agent](./resources/agent/gui-agent.md) - 界面操作
-  - [核心论文](./resources/agent/papers.md) - 必读论文
+  - [核心论文](./resources/agent/papers/README.md) - 必读论文
 
 **📊 RAG 方向**：
 - [x] [RAG 资源总览 📂](./resources/rag/) - RAG 所有资源导航
@@ -1070,7 +1070,7 @@ AgentGuide 提供 **n 个简历级实战项目**，每个项目都提供：
   - [Embedding 模型](./resources/rag/embedding.md) - Embedding选型
   - [Reranker](./resources/rag/reranker.md) - 重排序
   - [高级RAG](./resources/rag/advanced.md) - GraphRAG、HyDE
-  - [核心论文](./resources/rag/papers.md) - 必读论文
+  - [核心论文](./resources/rag/papers/README.md) - 必读论文
 
 **🛠️ 通用工具**：
 - [x] [开发者工具箱](./resources/tools.md) - Cursor、元宝、Excalidraw
@@ -1231,6 +1231,7 @@ python quickstart_rag_agent.py
 - 🤖 [Agent 资源总览](./resources/agent/) - Agent 所有资源
 - 📊 [RAG 资源总览](./resources/rag/) - RAG 所有资源
 - 🛠️ [开发工具箱](./resources/tools.md) - 效率工具推荐
+- 📚 [精选学习资源](./resources/learning-resources.md) - 课程、教程、书籍汇总
 
 ---
 

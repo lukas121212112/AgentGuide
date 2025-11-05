@@ -67,7 +67,30 @@
 
 ---
 
-## 三、8周详细学习计划
+## 三、推荐学习资源与工具
+
+### 📚 核心课程与书籍
+- **课程**: [吴恩达: Generative AI for Everyone](https://www.deeplearning.ai/courses/generative-ai-for-everyone/)
+- **课程**: [微软: Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
+- **课程**: [HuggingFace NLP Course](https://huggingface.co/learn/nlp-course/chapter1/1)
+- **书籍**: [《动手学大模型应用开发》](https://datawhalechina.github.io/llm-universe/#/)
+- **书籍**: [《Build a Large Language Model (From Scratch)》](https://github.com/rasbt/LLMs-from-scratch)
+
+### 🛠️ 开发框架与工具
+- **LLM框架**: [LangChain](https://github.com/langchain-ai/langchain), [LlamaIndex](https://github.com/run-llama/llama_index), [Dify](https://github.com/langgenius/dify)
+- **Agent框架**: [AutoGen](https://github.com/microsoft/autogen), [CrewAI](https://github.com/joaomdmoura/crewAI), [AgentScope](https://github.com/modelscope/agentscope)
+- **向量数据库**: [Milvus](https://github.com/milvus-io/milvus), [Qdrant](https://github.com/qdrant/qdrant), [Chroma](https://github.com/chroma-core/chroma)
+- **推理引擎**: [vLLM](https://github.com/vllm-project/vllm), [SGLang](https://github.com/sgl-project/sglang), [Ollama](https://github.com/ollama/ollama)
+- **评估工具**: [RAGAs](https://github.com/explodinggradients/ragas), [DeepEval](https://github.com/confident-ai/deepeval), [LangSmith](https://docs.smith.langchain.com/)
+
+### 🌐 学习社区与资源
+- **社区**: [HuggingFace](https://huggingface.co/), [ModelScope](https://modelscope.cn/), [魔乐社区](https://modelers.cn/)
+- **博客**: [Lil'Log (OpenAI)](https://lilianweng.github.io/), [科学空间（苏剑林）](https://kexue.fm/), [Chip Huyen](https://huyenchip.com/blog/)
+- **资源库**: [Awesome LLM Resources](https://github.com/WangRongsheng/awesome-LLM-resources)
+
+---
+
+## 四、8周详细学习计划
 
 ### **第 1 周：大模型应用开发基础 + 手撕 Naive RAG**
 
@@ -89,14 +112,14 @@
 
 **🌟 每日学习计划**
 
-| **天数** | **学习主题** | **资源链接** | **目标** |
-|---|---|---|---|
-| 1 | FastAPI 快速入门 | 教程: [FastAPI Official Tutorial](https://fastapi.tiangolo.com/tutorial/) | 掌握 FastAPI 基础，能够创建路由、处理请求 |
-| 2 | LangChain 核心概念 | 文档: [LangChain Quickstart](https://python.langchain.com/v0.1/docs/get_started/quickstart/) | 理解 LangChain 六大核心模块，熟练使用 LCEL |
-| 3 | RAG Part 1: 加载与分割 | 文档: [LlamaIndex Loaders](https://docs.llamaindex.ai/en/stable/module_guides/loading/documents_and_nodes/root.html) | 掌握不同格式文档 (PDF, MD) 的加载和文本分块策略 |
-| 4 | RAG Part 2: 向量化与存储 | 教程: [FAISS Intro](https://github.com/facebookresearch/faiss/wiki/Getting-started) | 理解 Embedding 原理，使用 FAISS/Chroma 构建本地向量索引 |
-| 5-6 | 手撕 Naive RAG 系统 | 教程: [RAG from Scratch](https://github.com/langchain-ai/rag-from-scratch) | 整合 FastAPI + LangChain，完成一个端到端的文档问答 API |
-| 7 | 周度总结与项目部署 | | 将本周的 RAG 项目用 Docker 打包，并成功运行 |
+| **天数** | **学习主题**           | **资源链接**                                                                                                                                                                                                                                                                                                                                      | **目标**                                   |
+| ------ | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| 1      | FastAPI 快速入门       | 教程: [FastAPI Official Tutorial](https://fastapi.tiangolo.com/tutorial/)                                                                                                                                                                                                                                                                       | 掌握 FastAPI 基础，能够创建路由、处理请求                |
+| 2      | LangChain 核心概念     | 文档: [LangChain Quickstart](https://python.langchain.com/v0.1/docs/get_started/quickstart/)<br>课程: [吴恩达: LangChain for LLM Application Development](https://learn.deeplearning.ai/langchain/lesson/1/introduction)<br>课程: [Building Systems with the ChatGPT API](https://learn.deeplearning.ai/chatgpt-building-system/lesson/1/introduction) | 理解 LangChain 六大核心模块，熟练使用 LCEL            |
+| 3      | RAG Part 1: 加载与分割  | 文档: [LlamaIndex Loaders](https://docs.llamaindex.ai/en/stable/module_guides/loading/documents_and_nodes/root.html)<br>工具: [Unstructured.io](https://unstructured-io.github.io/unstructured/), [MinerU](https://github.com/opendatalab/MinerU), [Docling](https://github.com/DS4SD/docling)                                                    | 掌握不同格式文档 (PDF, MD) 的加载和文本分块策略            |
+| 4      | RAG Part 2: 向量化与存储 | 教程: [FAISS Intro](https://github.com/facebookresearch/faiss/wiki/Getting-started)<br>教程: [Sentence Transformers](https://www.sbert.net/)                                                                                                                                                                                                      | 理解 Embedding 原理，使用 FAISS/Chroma 构建本地向量索引 |
+| 5-6    | 手撕 Naive RAG 系统    | 教程: [RAG from Scratch](https://github.com/langchain-ai/rag-from-scratch)<br>概念: [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>教程: [动手学大模型应用开发](https://datawhalechina.github.io/llm-universe/#/)                                                                                                   | 整合 FastAPI + LangChain，完成一个端到端的文档问答 API  |
+| 7      | 周度总结与项目部署          |                                                                                                                                                                                                                                                                                                                                               | 将本周的 RAG 项目用 Docker 打包，并成功运行             |
 
 ---
 
@@ -122,14 +145,14 @@
 
 **🌟 每日学习计划**
 
-| **天数** | **学习主题** | **资源链接** | **目标** |
-|---|---|---|---|
-| 8 | Query Transformation | 教程: [LlamaIndex Query Transforms](https://docs.llamaindex.ai/en/stable/module_guides/querying/query_transforms/root.html) | 实现 HyDE, Multi-Query 等查询改写策略 |
-| 9 | 混合检索与重排 (Rerank) | 教程: [LlamaIndex Reranking](https://docs.llamaindex.ai/en/stable/examples/node_postprocessor/CohereRerank.html) | 实现 BM25 + Embedding 混合检索，并集成 Reranker |
-| 10-11 | RAG 评估体系 | 文档: [RAGAs 评估框架](https://docs.ragas.io/en/latest/index.html) | 学习 RAG 核心评估指标，并用 RAGAs 评估优化前后的系统性能 |
-| 12 | 生产级向量数据库 (Milvus) | 文档: [Milvus Quick Start](https://milvus.io/docs/install_standalone-docker.md) | 使用 Docker 部署 Milvus，并掌握其 Python SDK |
-| 13 | 高级数据处理 | 文档: [Unstructured.io](https://unstructured-io.github.io/unstructured/) | 使用 Unstructured 解析包含表格、图片的复杂 PDF |
-| 14 | 周度总结与系统升级 | | 将第一周的 RAG 系统升级，集成混合检索、Reranker 和 Milvus |
+| **天数** | **学习主题**             | **资源链接**                                                                                                                                                                                                                                                                                                  | **目标**                                  |
+| ------ | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| 8      | Query Transformation | 教程: [LlamaIndex Query Transforms](https://docs.llamaindex.ai/en/stable/module_guides/querying/query_transforms/root.html)                                                                                                                                                                                 | 实现 HyDE, Multi-Query 等查询改写策略            |
+| 9      | 混合检索与重排 (Rerank)     | 教程: [LlamaIndex Reranking](https://docs.llamaindex.ai/en/stable/examples/node_postprocessor/CohereRerank.html)<br>论文: [Modular RAG](https://arxiv.org/pdf/2407.21059)                                                                                                                                     | 实现 BM25 + Embedding 混合检索，并集成 Reranker   |
+| 10-11  | RAG 评估体系             | 文档: [RAGAs 评估框架](https://docs.ragas.io/en/latest/index.html)<br>工具: [FlashRAG](https://github.com/RUC-NLPIR/FlashRAG), [DeepEval](https://github.com/confident-ai/deepeval), [Lighteval](https://github.com/huggingface/lighteval)                                                                        | 学习 RAG 核心评估指标，并用 RAGAs 评估优化前后的系统性能      |
+| 12     | 生产级向量数据库 (Milvus)    | 文档: [Milvus Quick Start](https://milvus.io/docs/install_standalone-docker.md)<br>替代: [Infinity](https://github.com/infiniflow/infinity), [Qdrant](https://qdrant.tech/)                                                                                                                                   | 使用 Docker 部署 Milvus，并掌握其 Python SDK     |
+| 13     | 高级数据处理               | 文档: [Unstructured.io](https://unstructured-io.github.io/unstructured/)<br>工具: [MinerU](https://github.com/opendatalab/MinerU), [PDF-Extract-Kit](https://github.com/opendatalab/PDF-Extract-Kit), [Docling](https://github.com/DS4SD/docling), [GOT-OCR2.0](https://github.com/Ucas-HaoranWei/GOT-OCR2.0) | 使用 Unstructured/MinerU 解析包含表格、图片的复杂 PDF |
+| 14     | 周度总结与系统升级            |                                                                                                                                                                                                                                                                                                           | 将第一周的 RAG 系统升级，集成混合检索、Reranker 和 Milvus |
 
 ---
 
@@ -154,15 +177,15 @@
 
 **🌟 每日学习计划**
 
-| **天数** | **学习主题** | **资源链接** | **目标** |
-|---|---|---|---|
-| 15 | Agent 核心概念 | 文档: [LangChain Agents](https://python.langchain.com/v0.1/docs/modules/agents/) | 理解 ReAct 框架，并运行一个 LangChain 官方的 Agent 示例 |
-| 16 | 自定义工具开发 | 教程: [LangChain Custom Tools](https://python.langchain.com/v0.1/docs/modules/tools/custom_tools/) | 编写一个查询天气的自定义工具，并集成到 Agent 中 |
-| 17 | SQL & 数据库工具 | 教程: [LangChain SQL Agent](https://python.langchain.com/v0.1/docs/use_cases/sql/) | 构建一个能根据自然语言查询数据库的 SQL Agent |
-| 18 | Function Calling 实战 | 文档: [OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling) | 使用 OpenAI API 实现一个能根据用户问题调用函数的 Agent |
-| 19 | Agent Memory | 文档: [LangChain Memory](https://python.langchain.com/v0.1/docs/modules/memory/) | 为 Agent 添加对话历史记忆 (ConversationBufferMemory) |
-| 20 | Agent 错误处理 | | 为工具调用添加重试机制 (`tenacity` 库) 和降级策略 |
-| 21 | 周度总结与项目构建 | | 构建一个集成 RAG 和 Web 搜索工具的 "研究助手" Agent |
+| **天数** | **学习主题**            | **资源链接**                                                                                                                                                                                                                     | **目标**                                      |
+| ------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| 15     | Agent 核心概念          | 博客: [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)<br>文档: [LangChain Agents](https://python.langchain.com/v0.1/docs/modules/agents/)<br>论文: [ReAct](https://arxiv.org/abs/2210.03629) | 理解 ReAct 框架，并运行一个 LangChain 官方的 Agent 示例    |
+| 16     | 自定义工具开发             | 教程: [LangChain Custom Tools](https://python.langchain.com/v0.1/docs/modules/tools/custom_tools/)<br>参考: [MCP协议](https://smithery.ai/), [MCP教程](https://www.youtube.com/watch?v=McNRkd5CxFY)                                  | 编写一个查询天气的自定义工具，并集成到 Agent 中                 |
+| 17     | SQL & 数据库工具         | 教程: [LangChain SQL Agent](https://python.langchain.com/v0.1/docs/use_cases/sql/)                                                                                                                                             | 构建一个能根据自然语言查询数据库的 SQL Agent                 |
+| 18     | Function Calling 实战 | 文档: [OpenAI Function Calling](https://platform.openai.com/docs/guides/function-calling)<br>指南: [GPT Best Practices](https://platform.openai.com/docs/guides/gpt-best-practices)                                              | 使用 OpenAI API 实现一个能根据用户问题调用函数的 Agent        |
+| 19     | Agent Memory        | 文档: [LangChain Memory](https://python.langchain.com/v0.1/docs/modules/memory/)<br>工具: [Mem0](https://github.com/mem0ai/mem0), [MemoryScope](https://github.com/modelscope/MemoryScope)                                       | 为 Agent 添加对话历史记忆 (ConversationBufferMemory) |
+| 20     | Agent 错误处理          | 教程: [Error Handling in Agents](https://python.langchain.com/docs/modules/agents/how_to/handle_parsing_errors)                                                                                                                | 为工具调用添加重试机制 (`tenacity` 库) 和降级策略            |
+| 21     | 周度总结与项目构建           |                                                                                                                                                                                                                              | 构建一个集成 RAG 和 Web 搜索工具的 "研究助手" Agent         |
 
 ---
 
@@ -187,14 +210,14 @@
 
 **🌟 每日学习计划**
 
-| **天数** | **学习主题** | **资源链接** | **目标** |
-|---|---|---|---|
-| 22 | 性能瓶颈分析 | | 学习使用 `cProfile`, `py-spy` 等工具分析现有 Agent 系统的性能瓶颈 |
-| 23 | 缓存优化 (Redis) | 教程: [FastAPI with Redis](https://testdriven.io/blog/fastapi-redis/) | 为 Agent 系统添加 Redis 缓存，缓存 LLM 响应 |
-| 24-25 | 异步处理 (Async) | 教程: [FastAPI Async](https://fastapi.tiangolo.com/async/) | 将系统中 I/O 密集型操作 (如 API 调用) 改造为异步 |
-| 26 | 批处理优化 (Batching) | | 实现 Embedding 和 Reranker 的批处理，提升吞吐量 |
-| 27 | 高性能推理 (vLLM) | 文档: [vLLM Quickstart](https://docs.vllm.ai/en/latest/getting_started/quickstart.html) | 使用 vLLM 部署一个开源模型 (如 Llama 3)，并测试其吞吐量 |
-| 28 | 周度总结与性能压测 | | 使用 `locust` 或 `jmeter` 对优化前后的系统进行压测，并记录 QPS, P99 等指标 |
+| **天数** | **学习主题**         | **资源链接**                                                                                                                                                                                                                                                                                                                                                               | **目标**                                               |
+| ------ | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
+| 22     | 性能瓶颈分析           | 工具: [py-spy](https://github.com/benfred/py-spy), [Scalene](https://github.com/plasma-umass/scalene)                                                                                                                                                                                                                                                                    | 学习使用 `cProfile`, `py-spy` 等工具分析现有 Agent 系统的性能瓶颈      |
+| 23     | 缓存优化 (Redis)     | 教程: [FastAPI with Redis](https://testdriven.io/blog/fastapi-redis/)<br>工具: [LiteLLM Caching](https://docs.litellm.ai/docs/caching)                                                                                                                                                                                                                                     | 为 Agent 系统添加 Redis 缓存，缓存 LLM 响应                      |
+| 24-25  | 异步处理 (Async)     | 教程: [FastAPI Async](https://fastapi.tiangolo.com/async/)<br>示例: [LangChain Async](https://python.langchain.com/docs/how_to/async/)                                                                                                                                                                                                                                     | 将系统中 I/O 密集型操作 (如 API 调用) 改造为异步                      |
+| 26     | 批处理优化 (Batching) | 教程: [Batch Processing](https://python.langchain.com/docs/how_to/batch/)                                                                                                                                                                                                                                                                                                | 实现 Embedding 和 Reranker 的批处理，提升吞吐量                   |
+| 27     | 高性能推理 (vLLM)     | 文档: [vLLM Quickstart](https://docs.vllm.ai/en/latest/getting_started/quickstart.html)<br>替代: [SGLang](https://github.com/sgl-project/sglang), [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM), [LMDeploy](https://github.com/InternLM/lmdeploy)<br>概览: [Awesome Inference](https://github.com/WangRongsheng/awesome-LLM-resources#%E6%8E%A8%E7%90%86-inference) | 使用 vLLM 部署一个开源模型 (如 Llama 3)，并测试其吞吐量                 |
+| 28     | 周度总结与性能压测        |                                                                                                                                                                                                                                                                                                                                                                        | 使用 `locust` 或 `jmeter` 对优化前后的系统进行压测，并记录 QPS, P99 等指标 |
 
 ---
 
@@ -220,15 +243,15 @@
 
 **🌟 每日学习计划**
 
-| **天数** | **学习主题** | **资源链接** | **目标** |
-|---|---|---|---|
-| 29 | 链路追踪 (LangSmith) | 文档: [LangSmith](https://docs.smith.langchain.com/) | 将 LangSmith 集成到现有 Agent 应用中，分析调用链路 |
-| 30 | 指标监控 (Prometheus) | 教程: [Prometheus Python Client](https://github.com/prometheus/client_python) | 暴露 API 的 QPS, 延迟, 错误率等核心指标 |
-| 31 | 可视化 (Grafana) | | 安装 Grafana，并创建一个简单的监控大盘来展示 Prometheus 指标 |
-| 32 | 容器化 (Docker) | 教程: [Docker for FastAPI](https://fastapi.tiangolo.com/deployment/docker/) | 为 FastAPI 应用编写 Dockerfile 并成功构建镜像 |
-| 33 | 服务编排 (Docker Compose) | | 编写 `docker-compose.yml` 文件，一键启动整个应用栈 |
-| 34 | 日志系统 | | 配置应用将日志输出为 JSON 格式，为接入 ELK 做准备 |
-| 35 | 周度总结与生产环境模拟 | | 模拟一次线上故障，并使用本周学习的工具链进行问题定位 |
+| **天数** | **学习主题**              | **资源链接**                                                                                                                                                                   | **目标**                                   |
+| ------ | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| 29     | 链路追踪 (LangSmith)      | 文档: [LangSmith](https://docs.smith.langchain.com/)<br>替代: [OpenTelemetry](https://opentelemetry.io/docs/languages/python/), [LangFuse](https://langfuse.com/)              | 将 LangSmith 集成到现有 Agent 应用中，分析调用链路       |
+| 30     | 指标监控 (Prometheus)     | 教程: [Prometheus Python Client](https://github.com/prometheus/client_python)<br>集成: [FastAPI Instrumentator](https://github.com/trallnag/prometheus-fastapi-instrumentator) | 暴露 API 的 QPS, 延迟, 错误率等核心指标               |
+| 31     | 可视化 (Grafana)         | 教程: [Grafana Dashboard](https://grafana.com/docs/grafana/latest/getting-started/)                                                                                          | 安装 Grafana，并创建一个简单的监控大盘来展示 Prometheus 指标 |
+| 32     | 容器化 (Docker)          | 教程: [Docker for FastAPI](https://fastapi.tiangolo.com/deployment/docker/)<br>最佳实践: [Docker Best Practices](https://docs.docker.com/develop/dev-best-practices/)            | 为 FastAPI 应用编写 Dockerfile 并成功构建镜像        |
+| 33     | 服务编排 (Docker Compose) | 教程: [Docker Compose](https://docs.docker.com/compose/)<br>示例: [Full Stack FastAPI](https://github.com/tiangolo/full-stack-fastapi-template)                                | 编写 `docker-compose.yml` 文件，一键启动整个应用栈     |
+| 34     | 日志系统                  | 教程: [Python Logging](https://docs.python.org/3/howto/logging.html)<br>工具: [Loguru](https://github.com/Delgan/loguru), [structlog](https://www.structlog.org/)              | 配置应用将日志输出为 JSON 格式，为接入 ELK 做准备           |
+| 35     | 周度总结与生产环境模拟           |                                                                                                                                                                            | 模拟一次线上故障，并使用本周学习的工具链进行问题定位               |
 
 ---
 
@@ -251,13 +274,13 @@
 
 **🌟 每日学习计划**
 
-| **天数** | **学习主题** | **资源链接** | **目标** |
-|---|---|---|---|
-| 36-37 | AutoGen 核心概念 | 文档: [AutoGen Tutorial](https://microsoft.github.io/autogen/docs/getting-started/) | 学习 `ConversableAgent`, `GroupChat` 等核心概念，并运行官方示例 |
-| 38 | AutoGen 实战 | | 实现一个“研究员-程序员-测试员”的 Multi-Agent 系统 |
-| 39-40 | CrewAI 核心概念 | 文档: [CrewAI Docs](https://docs.crewai.com/) | 学习 Agent, Task, Crew, Process 的概念，并运行官方示例 |
-| 41 | CrewAI 实战 | | 实现一个“旅行规划师-本地向导-预订专员”的 Multi-Agent 系统 |
-| 42 | 框架对比与总结 | | 对比 AutoGen 和 CrewAI 的设计哲学、优缺点和适用场景 |
+| **天数** | **学习主题**     | **资源链接**                                                                                                                                                                                                                                                                                                                                                                                             | **目标**                                           |
+| ------ | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
+| 36-37  | AutoGen 核心概念 | 文档: [AutoGen Tutorial](https://microsoft.github.io/autogen/docs/getting-started/)<br>论文: [AutoGen Framework](https://arxiv.org/abs/2308.08155)                                                                                                                                                                                                                                                       | 学习 `ConversableAgent`, `GroupChat` 等核心概念，并运行官方示例 |
+| 38     | AutoGen 实战   | 示例: [AutoGen Examples](https://github.com/microsoft/autogen/tree/main/notebook)                                                                                                                                                                                                                                                                                                                      | 实现一个"研究员-程序员-测试员"的 Multi-Agent 系统                |
+| 39-40  | CrewAI 核心概念  | 文档: [CrewAI Docs](https://docs.crewai.com/)<br>教程: [CrewAI Quickstart](https://docs.crewai.com/quickstart)                                                                                                                                                                                                                                                                                           | 学习 Agent, Task, Crew, Process 的概念，并运行官方示例        |
+| 41     | CrewAI 实战    | 示例: [CrewAI Examples](https://github.com/joaomdmoura/crewAI-examples)                                                                                                                                                                                                                                                                                                                                | 实现一个"旅行规划师-本地向导-预订专员"的 Multi-Agent 系统            |
+| 42     | 框架对比与总结      | 更多框架: [agentUniverse](https://github.com/alipay/agentUniverse), [AgentScope](https://github.com/modelscope/agentscope), [Qwen-Agent](https://github.com/QwenLM/Qwen-Agent), [Lagent](https://github.com/InternLM/lagent), [PraisonAI](https://github.com/MervinPraison/PraisonAI)<br>概览: [Awesome Agents](https://github.com/WangRongsheng/awesome-LLM-resources#%E6%99%BA%E8%83%BD%E4%BD%93-agents) | 对比 AutoGen 和 CrewAI 的设计哲学、优缺点和适用场景               |
 
 ---
 
@@ -292,13 +315,13 @@
 
 **🌟 学习计划 (2周)**
 
-| **天数** | **学习主题** | **目标** |
-|---|---|---|
-| 43-47 | 项目一：智能客服 RAG | 完成需求分析、架构设计、核心功能开发 |
-| 48-51 | 项目一：优化与部署 | 完成性能优化、监控集成和 Docker 部署，撰写项目文档 |
-| 52-56 | 项目二：自动化投研 Agent | 完成需求分析、Agent 设计、工具开发和工作流实现 |
-| 57-58 | 简历撰写与项目总结 | 按照开发岗模板，将两个项目经历量化地写入简历 |
-| 59-60 | 系统设计与面试 Mock | 准备高频系统设计题，并进行 1v1 模拟面试 |
+| **天数** | **学习主题**        | **目标**                                                                                                                                                                                                                                                                                                                           |                        |
+| ------ | --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| 43-47  | 项目一：智能客服 RAG    | 完成需求分析、架构设计、核心功能开发                                                                                                                                                                                                                                                                                                               |                        |
+| 48-51  | 项目一：优化与部署       | 完成性能优化、监控集成和 Docker 部署，撰写项目文档                                                                                                                                                                                                                                                                                                    |                        |
+| 52-56  | 项目二：自动化投研 Agent | 完成需求分析、Agent 设计、工具开发和工作流实现                                                                                                                                                                                                                                                                                                       |                        |
+| 57-58  | 简历撰写与项目总结       | 指南: [Tech Resume Guide](https://www.techinterviewhandbook.org/resume/)<br>参考: [AI面试指南](https://github.com/WangRongsheng/awesome-LLM-resources/tree/main/docs/04-interview)                                                                                                                                                       | 按照开发岗模板，将两个项目经历量化地写入简历 |
+| 59-60  | 系统设计与面试 Mock    | 资源: [OpenAI Cookbook](https://github.com/openai/openai-cookbook), [GPT Best Practices](https://platform.openai.com/docs/guides/gpt-best-practices)<br>题库: [LLM系统设计面试题](https://www.analyticsvidhya.com/blog/2024/04/rag-interview-questions/)<br>课程: [LLM Evaluation: A Complete Course](https://www.comet.com/site/llm-course/) | 准备高频系统设计题，并进行 1v1 模拟面试 |
 
 ---
 
