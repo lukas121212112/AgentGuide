@@ -17,7 +17,7 @@ This section provides a collection of practical, end-to-end AI Agent projects an
 
 -   [**04: End-to-End Open Source Projects**](./04-end-to-end-projects/README.md)
     -   A curated list of high-quality, open-source Agent projects that you can run and learn from.
--   [**05: Workflow Automation Projects**](./05-workflows/README.md)
-    -   A collection of projects focused on workflow automation using agents and tools like LangGraph.
--   [**06: Awesome Agent Lists**](./06-awesome-lists/README.md)
-    -   A curated list of "awesome lists" and other collections of Agent-related projects and resources.
+-   [**05: Agent Workflow Projects**](./05-agent-workflows/README.md)
+    -   A collection of projects focused on workflow automation using agents and tools like Dify, n8n, Flowise.
+-   [**06: Agent Project Collections**](./06-project-collections/README.md)
+    -   A curated collection of Agent-related projects and resources.
