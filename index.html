@@ -32,6 +32,9 @@
     <!-- Icons -->
     <!-- 外部图标CSS已移除以避免加载错误 -->
     
+    <!-- FlexSearch for local search -->
+    <script src="https://unpkg.com/flexsearch@0.7.31/dist/flexsearch.bundle.js"></script>
+    
     <style>
         :root {
             --primary-color: #3b82f6;
@@ -87,6 +90,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 0;
+            gap: 1rem;
         }
 
         .logo {
@@ -127,6 +131,122 @@
             border-radius: 0.5rem;
             font-weight: 600;
             transition: all 0.3s ease;
+        }
+
+        .search-container {
+            position: relative;
+            flex: 1;
+            max-width: 400px;
+            margin: 0 1rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            pointer-events: none;
+        }
+
+        .search-shortcut {
+            position: absolute;
+            right: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            pointer-events: none;
+        }
+
+        .search-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-lg);
+            max-height: 400px;
+            overflow-y: auto;
+            z-index: 1001;
+            display: none;
+            margin-top: 0.5rem;
+        }
+
+        .search-dropdown.show {
+            display: block;
+        }
+
+        .search-result {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .search-result:hover,
+        .search-result.active {
+            background: var(--bg-secondary);
+        }
+
+        .search-result:last-child {
+            border-bottom: none;
+        }
+
+        .search-result-title {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .search-result-description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .search-result-meta {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .search-highlight {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 0.1rem 0.2rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+        }
+
+        html[data-theme="dark"] .search-highlight {
+            background: #451a03;
+            color: #fbbf24;
         }
 
         .github-btn:hover {
@@ -524,6 +644,20 @@
                 display: none;
             }
 
+            .search-container {
+                max-width: 200px;
+                margin: 0 0.5rem;
+            }
+
+            .search-input {
+                font-size: 0.9rem;
+                padding: 0.6rem 1rem 0.6rem 2.5rem;
+            }
+
+            .search-shortcut {
+                display: none;
+            }
+
             .hero h1 {
                 font-size: 2.5rem;
             }
@@ -552,6 +686,27 @@
             .footer-content {
                 grid-template-columns: 1fr;
                 text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .search-container {
+                max-width: 150px;
+            }
+
+            .search-input {
+                padding: 0.5rem 0.8rem 0.5rem 2rem;
+                font-size: 0.85rem;
+            }
+
+            .search-icon svg {
+                width: 14px;
+                height: 14px;
+            }
+
+            .github-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
             }
         }
 
@@ -635,6 +790,18 @@
                 <li><a href="#resources">资源</a></li>
                 <li><a href="#community">社群</a></li>
             </ul>
+            
+            <div class="search-container" role="search" aria-label="全站搜索">
+                <div class="search-icon" aria-hidden="true">
+                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </div>
+                <input type="text" id="globalSearchInput" class="search-input" placeholder="搜索资源、文档、项目..." autocomplete="off" aria-label="搜索输入框" aria-describedby="searchHint">
+                <div class="search-shortcut" id="searchHint" aria-label="快捷键：Ctrl+K">Ctrl+K</div>
+                <div id="globalSearchDropdown" class="search-dropdown" role="listbox" aria-label="搜索结果"></div>
+            </div>
+            
             <button id="themeToggle" class="github-btn" aria-label="切换主题">🌙</button>
             <a href="https://github.com/adongwanai/AgentGuide" class="github-btn" target="_blank">
                 <span>⭐</span>
@@ -1160,6 +1327,347 @@
         [searchInput, categorySelect, typeSelect, levelSelect].forEach(el => {
             el.addEventListener('input', applyFilters);
             el.addEventListener('change', applyFilters);
+        });
+
+        // Global search functionality
+        class GlobalSearch {
+            constructor() {
+                this.searchInput = document.getElementById('globalSearchInput');
+                this.searchDropdown = document.getElementById('globalSearchDropdown');
+                this.searchIndex = null;
+                this.searchResults = [];
+                this.selectedIndex = -1;
+                this.resources = [];
+                this.init();
+            }
+
+            init() {
+                this.setupEventListeners();
+                this.setupKeyboardShortcuts();
+                this.buildSearchIndex();
+            }
+
+            setupEventListeners() {
+                // Input events
+                this.searchInput.addEventListener('input', (e) => {
+                    this.handleSearch(e.target.value);
+                });
+
+                this.searchInput.addEventListener('focus', () => {
+                    if (this.searchInput.value.trim()) {
+                        this.showDropdown();
+                    }
+                });
+
+                // Click outside to close
+                document.addEventListener('click', (e) => {
+                    if (!this.searchInput.contains(e.target) && !this.searchDropdown.contains(e.target)) {
+                        this.hideDropdown();
+                    }
+                });
+
+                // Keyboard navigation
+                this.searchInput.addEventListener('keydown', (e) => {
+                    this.handleKeyboardNavigation(e);
+                });
+            }
+
+            setupKeyboardShortcuts() {
+                // Ctrl+K or Cmd+K to focus search
+                document.addEventListener('keydown', (e) => {
+                    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                        e.preventDefault();
+                        this.searchInput.focus();
+                        this.searchInput.select();
+                    }
+                });
+
+                // Escape to close dropdown and blur input
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Escape') {
+                        this.hideDropdown();
+                        this.searchInput.blur();
+                    }
+                });
+            }
+
+            async buildSearchIndex() {
+                try {
+                    // Wait for resources to be loaded
+                    if (window.resources && window.resources.length > 0) {
+                        this.resources = window.resources;
+                    } else {
+                        // Fallback: fetch resources if not already loaded
+                        const response = await fetch('data/resources.json');
+                        this.resources = await response.json();
+                    }
+
+                    // Create FlexSearch index
+                    this.searchIndex = new FlexSearch.Document({
+                        document: {
+                            id: 'id',
+                            index: [
+                                {
+                                    field: 'title',
+                                    tokenize: 'forward',
+                                    resolution: 9
+                                },
+                                {
+                                    field: 'description',
+                                    tokenize: 'forward',
+                                    resolution: 5
+                                },
+                                {
+                                    field: 'tags',
+                                    tokenize: 'forward',
+                                    resolution: 7
+                                },
+                                {
+                                    field: 'category',
+                                    tokenize: 'forward',
+                                    resolution: 6
+                                }
+                            ],
+                            store: ['title', 'description', 'category', 'type', 'level', 'tags', 'url', 'date', 'featured']
+                        },
+                        tokenize: 'forward',
+                        threshold: 0,
+                        depth: 3,
+                        limit: 10
+                    });
+
+                    // Add documents to index
+                    this.resources.forEach(resource => {
+                        this.searchIndex.add(resource);
+                    });
+
+                } catch (error) {
+                    console.error('Failed to build search index:', error);
+                }
+            }
+
+            handleSearch(query) {
+                const trimmedQuery = query.trim();
+                
+                if (!trimmedQuery) {
+                    this.hideDropdown();
+                    return;
+                }
+
+                if (!this.searchIndex) {
+                    console.warn('Search index not ready');
+                    return;
+                }
+
+                try {
+                    // Perform search
+                    const results = this.searchIndex.search(trimmedQuery, {
+                        limit: 10,
+                        enrich: true
+                    });
+
+                    // Process and rank results
+                    this.searchResults = this.processSearchResults(results, trimmedQuery);
+                    this.selectedIndex = -1;
+                    this.renderDropdown();
+                    this.showDropdown();
+
+                } catch (error) {
+                    console.error('Search error:', error);
+                    this.hideDropdown();
+                }
+            }
+
+            processSearchResults(results, query) {
+                const scoredResults = [];
+                const queryLower = query.toLowerCase();
+
+                results.forEach(fieldResult => {
+                    fieldResult.result.forEach(doc => {
+                        const resource = doc.doc;
+                        let score = doc.score || 1;
+
+                        // Boost scoring based on match quality
+                        const titleLower = resource.title.toLowerCase();
+                        const descLower = resource.description.toLowerCase();
+                        const categoryLower = resource.category.toLowerCase();
+
+                        // Exact title match gets highest boost
+                        if (titleLower === queryLower) {
+                            score *= 10;
+                        } else if (titleLower.startsWith(queryLower)) {
+                            score *= 5;
+                        } else if (titleLower.includes(queryLower)) {
+                            score *= 3;
+                        }
+
+                        // Category match gets good boost
+                        if (categoryLower.includes(queryLower)) {
+                            score *= 2;
+                        }
+
+                        // Featured resources get slight boost
+                        if (resource.featured) {
+                            score *= 1.2;
+                        }
+
+                        scoredResults.push({
+                            ...resource,
+                            score: score,
+                            id: doc.id
+                        });
+                    });
+                });
+
+                // Remove duplicates and sort by score
+                const uniqueResults = [];
+                const seenIds = new Set();
+
+                scoredResults
+                    .sort((a, b) => b.score - a.score)
+                    .forEach(result => {
+                        if (!seenIds.has(result.id)) {
+                            uniqueResults.push(result);
+                            seenIds.add(result.id);
+                        }
+                    });
+
+                return uniqueResults.slice(0, 8); // Limit to top 8 results
+            }
+
+            renderDropdown() {
+                if (this.searchResults.length === 0) {
+                    this.searchDropdown.innerHTML = `
+                        <div class="search-result" role="option" aria-selected="false">
+                            <div class="search-result-title">未找到相关结果</div>
+                            <div class="search-result-description">尝试使用不同的关键词搜索</div>
+                        </div>
+                    `;
+                    return;
+                }
+
+                this.searchDropdown.innerHTML = this.searchResults.map((result, index) => {
+                    const highlightedTitle = this.highlightText(result.title, this.searchInput.value.trim());
+                    const highlightedDesc = this.highlightText(result.description, this.searchInput.value.trim());
+                    
+                    return `
+                        <div class="search-result ${index === this.selectedIndex ? 'active' : ''}" 
+                             data-index="${index}" 
+                             data-url="${result.url}"
+                             role="option"
+                             aria-selected="${index === this.selectedIndex}"
+                             tabindex="0">
+                            <div class="search-result-title">${highlightedTitle}</div>
+                            <div class="search-result-description">${highlightedDesc}</div>
+                            <div class="search-result-meta">
+                                <span>📁 ${result.category}</span>
+                                <span>🏷️ ${result.type}</span>
+                                <span>📊 ${result.level}</span>
+                                ${result.featured ? '<span>⭐ 推荐</span>' : ''}
+                            </div>
+                        </div>
+                    `;
+                }).join('');
+
+                // Add click handlers to results
+                this.searchDropdown.querySelectorAll('.search-result').forEach((element, index) => {
+                    element.addEventListener('click', () => {
+                        this.navigateToResult(this.searchResults[index]);
+                    });
+                    
+                    // Add keyboard support for result items
+                    element.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            this.navigateToResult(this.searchResults[index]);
+                        }
+                    });
+                });
+            }
+
+            highlightText(text, query) {
+                if (!query) return text;
+                
+                const regex = new RegExp(`(${this.escapeRegex(query)})`, 'gi');
+                return text.replace(regex, '<span class="search-highlight">$1</span>');
+            }
+
+            escapeRegex(string) {
+                return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            }
+
+            handleKeyboardNavigation(e) {
+                if (!this.isDropdownVisible()) return;
+
+                switch (e.key) {
+                    case 'ArrowDown':
+                        e.preventDefault();
+                        this.selectedIndex = Math.min(this.selectedIndex + 1, this.searchResults.length - 1);
+                        this.updateActiveResult();
+                        break;
+                    case 'ArrowUp':
+                        e.preventDefault();
+                        this.selectedIndex = Math.max(this.selectedIndex - 1, -1);
+                        this.updateActiveResult();
+                        break;
+                    case 'Enter':
+                        e.preventDefault();
+                        if (this.selectedIndex >= 0 && this.searchResults[this.selectedIndex]) {
+                            this.navigateToResult(this.searchResults[this.selectedIndex]);
+                        }
+                        break;
+                }
+            }
+
+            updateActiveResult() {
+                this.searchDropdown.querySelectorAll('.search-result').forEach((element, index) => {
+                    element.classList.toggle('active', index === this.selectedIndex);
+                });
+
+                // Scroll active result into view
+                const activeElement = this.searchDropdown.querySelector('.search-result.active');
+                if (activeElement) {
+                    activeElement.scrollIntoView({ block: 'nearest' });
+                }
+            }
+
+            navigateToResult(result) {
+                if (result && result.url) {
+                    // If it's an external URL, open in new tab
+                    if (result.url.startsWith('http')) {
+                        window.open(result.url, '_blank');
+                    } else {
+                        // For internal URLs, navigate within the page
+                        window.location.href = result.url;
+                    }
+                    this.hideDropdown();
+                    this.searchInput.blur();
+                }
+            }
+
+            showDropdown() {
+                this.searchDropdown.classList.add('show');
+            }
+
+            hideDropdown() {
+                this.searchDropdown.classList.remove('show');
+                this.selectedIndex = -1;
+            }
+
+            isDropdownVisible() {
+                return this.searchDropdown.classList.contains('show');
+            }
+        }
+
+        // Initialize global search when DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            // Make resources available globally for the search index
+            window.resources = resources;
+            
+            // Initialize the search functionality
+            setTimeout(() => {
+                new GlobalSearch();
+            }, 100);
         });
     </script>
 </body>
